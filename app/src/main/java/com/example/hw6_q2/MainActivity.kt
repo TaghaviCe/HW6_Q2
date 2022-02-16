@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
         img.setTranslationY(-2000f)
         if (activePlayer === RED_CODE) {
          img.setImageResource(android.R.drawable.ic_delete)
-          //  img.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.circle))
             img.animate().translationY(0f).rotationBy(360f).setDuration(300)
             status[tag] = RED_CODE
             activePlayer = GREEN_CODE
